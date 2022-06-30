@@ -9,9 +9,10 @@ Given two integers a, b,  check the following statement "Each of the numbers 'a'
         bool: answer
 */
 bool func(a, b) {
-  return a / 2 && b / 2;
+  return 1 - a % 2 == 1 && b % 2 == 0;
 }
 
 void main() {
   print(func(6, 8));
 }
+//1-46%2==1
