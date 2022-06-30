@@ -9,9 +9,10 @@ Given two integers a, b,  check the following statement "Each of the numbers 'a'
         bool: answer
 */
 bool func(a, b) {
-  return 1 + a % 2 == 1 && b % 2 == 0;
+  return a % 2 == 1 && b % 2 == 1;
 }
 
 void main() {
   print(func(7, 9));
 }
+//45%2==0 x%2==0 toqlik formulasi
