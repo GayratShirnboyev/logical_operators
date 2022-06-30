@@ -7,11 +7,14 @@ Given a two-digit integer a,  check the following statement "All digits sum is o
     Returns:
         bool: answer
 */
-int func(a) {
+bool func(a) {
   int x = (a ~/ 10) + (a % 10) % 2;
-  return x;
+  if (a % 2 != 1) {
+    return true;
+  }
+  return false;
 }
 
 void main() {
-  print(func(34));
+  print(func(35));
 }
