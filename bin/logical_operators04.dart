@@ -9,7 +9,7 @@ Given two integers a, b,  check the following statement "Each of the numbers 'a'
         bool: answer
 */
 bool func(a, b) {
-  return a / 2 || b / 2;
+  return a / 2 && b / 2;
 }
 
 void main() {
