@@ -8,9 +8,9 @@ Given a two-digit integer a,  check the following statement "All digits sum is e
         bool: answer
 */
 bool func(a, e) {
-  return a % 2 || e % 2;
+  return a > 0 % 2 && e > 0 % 2;
 }
 
 void main() {
-  print(func(6, 78));
+  print(func(6, 8));
 }
