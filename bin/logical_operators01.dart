@@ -9,5 +9,10 @@ Given three integers a, b, c,  check the following statement "The number b is be
     Returns:
         bool: answer
 */
+String func(a, b, c) {
+  return ('3<5 || 5<8');
+}
 
-void main() {}
+void main() {
+  print(func(3, 5, 8));
+}
