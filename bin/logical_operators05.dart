@@ -13,6 +13,6 @@ bool func(a, b) {
 }
 
 void main() {
-  print(func(7, 9));
+  print(func(7, 6));
 }
 //45%2==0 x%2==0 toqlik formulasi
