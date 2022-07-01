@@ -12,11 +12,11 @@ bool func(a) {
   int b = 7;
   int c = 5;
   int d = 3;
-  int f = 1;
-  if (a > b && b > c && c > d && d > f) {
-    return false;
+  int f = 4;
+  if (a > b && b > c && c > d && d < f) {
+    return true;
   }
-  return true;
+  return false;
 }
 
 void main() {
