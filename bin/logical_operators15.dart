@@ -8,7 +8,7 @@ Given a three-digit integer a,  check the following statement "All digits sum is
         bool: answer
 */
 bool func(a) {
-  int x = (a ~/ 10) + (a ~/ 10) + (a % 10);
+  int x = (a % 10) + (a % 10) + (a ~/ 10);
   if (a % 2 != 1) {
     return true;
   }
@@ -16,5 +16,5 @@ bool func(a) {
 }
 
 void main() {
-  print(func(357));
+  print(func(759));
 }
