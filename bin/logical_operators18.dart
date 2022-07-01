@@ -13,12 +13,12 @@ bool func(a) {
   int c = 5;
   int d = 3;
   int f = 4;
-  if (a > b && b > c && c > d && d < f) {
+  if (a > b && b > c && c > d && d > f) {
     return true;
   }
   return false;
 }
 
 void main() {
-  print(func(97531));
+  print(func(97534));
 }
