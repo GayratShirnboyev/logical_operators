@@ -8,17 +8,17 @@ Given a five-digit integer a, check the following statement "All digits of the n
         bool: answer
 */
 bool func(a) {
-  int a = 9;
-  int b = 7;
-  int c = 5;
-  int d = 3;
-  int f = 4;
-  if (a > b && b > c && c > d && d > f) {
+  int a = 5;
+  int b = 6;
+  int c = 9;
+  int d = 8;
+  int f = 9;
+  if (a < b && b < c && c < d && d < f) {
     return true;
   }
   return false;
 }
 
 void main() {
-  print(func(97534));
+  print(func(56789));
 }
