@@ -14,9 +14,9 @@ bool func(a) {
   int d = 3;
   int f = 1;
   if (a > b && b > c && c > d && d > f) {
-    return true;
+    return false;
   }
-  return false;
+  return true;
 }
 
 void main() {
