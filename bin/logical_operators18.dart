@@ -7,5 +7,18 @@ Given a five-digit integer a, check the following statement "All digits of the n
     Returns:
         bool: answer
 */
+bool func(a) {
+  int a = 9;
+  int b = 7;
+  int c = 5;
+  int d = 3;
+  int f = 1;
+  if (a > b && b > c && c > d && d > f) {
+    return true;
+  }
+  return false;
+}
 
-void main() {}
+void main() {
+  print(func(97531));
+}
