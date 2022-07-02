@@ -11,18 +11,18 @@ Five number consisting of one and zero is given (the number starts at once).
 */
 bool func(n) {
   int s = n % 10;
-  int d = n % 10 % 100;
-  int f = n % 10 % 1000;
-  int g = n % 10 % 10000;
-  int h = n % 10 % 100000;
+  int d = n ~/ 10 % 10;
+  int f = n % 10 ~/ 10;
+  int g = n ~/ 10 % 100;
+  int h = n % 10 ~/ 100;
   if (s == f && f == h) {
     if (d == g) {
-      return true;
+      return false;
     }
   }
-  return false;
+  return true;
 }
 
 void main() {
-  print(func(101010));
+  print(func(10101));
 }
