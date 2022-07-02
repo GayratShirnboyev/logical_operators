@@ -8,5 +8,18 @@ Given a three digit integer x, return true if x is palindrome integer.
   Returns:
       bool: answer
 */
+bool func(a) {
+  int d = a = a ~/ 10 % 10;
+  int g = a ~/ 10 % 10;
+  int z = a ~/ 10 ~/ 10;
+  if (d > g && g < z) {
+    return false;
+  }
+  {
+    return true;
+  }
+}
 
-void main() {}
+void main() {
+  print(func(767));
+}
